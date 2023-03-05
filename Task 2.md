@@ -1,5 +1,6 @@
 # Task 2 - PicoCTF
 
+
 ## 1)Binary Exploitation
 
 ### 1.Stonks:
@@ -40,6 +41,7 @@ Used an online converter to find factors and convert the message
 ![image](https://user-images.githubusercontent.com/118385974/222922645-5cc6c3b6-580b-4ca7-b22f-a274be0d20b1.png)
 
 
+
 ## 3)Web Exploitation
 
 ### 1.GET aHEAD:
@@ -48,7 +50,11 @@ Used an online converter to find factors and convert the message
 
 ![image](https://user-images.githubusercontent.com/118385974/222923413-b6574704-e0ba-4c51-8a09-9e6821a642d9.png)
 
+GET and POST method was used for red and blue respectively 
+
 ![image](https://user-images.githubusercontent.com/118385974/222923348-dcd76b56-6bc6-45c0-86e2-506a96327c4d.png)
+
+Used Postman extension to request method HEAD anf found flag in the header
 
 
 ### 2.Insp3ct0r:
@@ -66,17 +72,23 @@ Third part was in the Javascript
 ![image](https://user-images.githubusercontent.com/118385974/222923528-c569a72d-004f-4c3d-be3c-fdc19400ac1b.png)
 
 
+
 ## 4)Forensics
 
 ### 1.information:
 
-
 ![image](https://user-images.githubusercontent.com/118385974/222923606-58657c1e-79f2-470e-b946-2ac7eb54df1c.png)
+
+Noticed a base64 encoded text in the details of the cat.jpg
 
 ![image](https://user-images.githubusercontent.com/118385974/222923638-8470d5fb-80b3-4442-b4c5-b6fb14b96e77.png)
 
+decoded it to get the flag
+
 
 ### 2.Matryoshka doll:
+
+changed the jpg extension to rar and and used an online decompressor each time to get the succesive image till the flag.txt was obtained.
 
 ![image](https://user-images.githubusercontent.com/118385974/222923664-f0073be9-266d-4b7b-b103-6304bedfa85f.png)
 
@@ -84,9 +96,13 @@ Third part was in the Javascript
 ![image](https://user-images.githubusercontent.com/118385974/222923655-3215d7d4-d3fb-492a-aad3-f452c041fab6.png)
 
 
+
 ## 5)General Skills
 
 ### 1.Python Wrangling:
+
+![image](https://user-images.githubusercontent.com/118385974/222940027-354fd3c2-cb35-453a-bc3d-4b72dbaf0333.png)
+
 
 ![image](https://user-images.githubusercontent.com/118385974/222923696-95e4f3e3-b6fc-4628-8aac-8f2ef6d1f965.png)
 
@@ -96,9 +112,22 @@ Third part was in the Javascript
 ![image](https://user-images.githubusercontent.com/118385974/222923724-bc7f4aea-4d56-4910-8d05-d2bae1481acb.png)
 
 
+
 ## 6)Reverse Engineering
 
 ### 1.Transformation:
 
+''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])
+
+![image](https://user-images.githubusercontent.com/118385974/222940078-397be231-d830-4ddd-a047-8284245a8815.png)
+
+![image](https://user-images.githubusercontent.com/118385974/222940097-546703fc-61de-4ad6-bac4-f3a6a7222970.png)
+
 
 ### 2.keygenme-py:
+
+![image](https://user-images.githubusercontent.com/118385974/222940118-c35f6cf7-d325-4524-99ff-3dc8ad9fc17f.png)
+
+![image](https://user-images.githubusercontent.com/118385974/222940131-03d43d96-9631-4bc0-8139-12f244c1c21c.png)
+
+
