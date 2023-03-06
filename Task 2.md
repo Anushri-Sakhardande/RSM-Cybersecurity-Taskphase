@@ -22,6 +22,8 @@ Learnt that flag has been organized in big endian and converted it to little end
 
 ### 2.Cache Me Outside
 
+
+
 ## 2)Cryptography
 
 ### 1.Mod 26:
@@ -55,7 +57,7 @@ GET and POST method was used for red and blue respectively.
 
 ![image](https://user-images.githubusercontent.com/118385974/222923348-dcd76b56-6bc6-45c0-86e2-506a96327c4d.png)
 
-Used Postman extension to request method HEAD anf found flag in the header.
+Used Postman extension to request method HEAD and found flag in the header.
 
 
 ### 2.Insp3ct0r:
