@@ -1,5 +1,6 @@
 # Task 2 - PicoCTF
 
+LINK FOR LONGER VERSION:https://docs.google.com/document/d/1LDM6YegyXL2H1EFFvlkf6xdiQluPFk2W9m2wpB33HK4/edit?usp=sharing
 
 ## 1)Binary Exploitation
 
